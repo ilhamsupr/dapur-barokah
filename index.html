@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dapur Barokah</title>
+    <link rel="stylesheet" href="styless.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <!-- <header class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(255, 255, 255, 0.5);"> -->
+    <header class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dapur Barokah</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">tentang kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#order">pesan sekarang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">kontak</a>
+            </li>
+          </ul>
+          <a href="#order" class="btn btn-primary ms-lg-3">pesan sekarang</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-section d-flex align-items-center text-center"
+    >
+      <div class="container">
+        <!-- <h1>Rasakan Lezatnya Hidangan Tradisional!</h1> -->
+        <!-- <p>Nasi kuning gurih, ayam goreng renyah, dan kepala ayam yang nikmat hanya untuk Anda.</p> -->
+        <a href="#order" class="btn btn-primary">pesan sekarang</a>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img
+              src="foto/nasi kuning 1.jpg"
+              alt="Nasi Kuning"
+              class="img-fluid"
+            />
+            <h3>Nasi Kuning</h3>
+            <p>Nasi kuning gurih dengan rempah pilihan.</p>
+            <p><strong>Rp 7,000</strong></p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-product="Nasi Kuning"
+              data-price="7000"
+              >pesan sekarang</a
+            >
+          </div>
+          <div class="col-md-4">
+            <img
+              src="foto/ayam goreng.jpg"
+              alt="Ayam Goreng"
+              class="img-fluid"
+            />
+            <h3>Ayam Goreng</h3>
+            <p>Ayam goreng renyah dengan bumbu khas.</p>
+            <p><strong>Rp 7,000</strong></p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-product="Ayam Goreng"
+              data-price="7000"
+              >pesan sekarang</a
+            >
+          </div>
+          <div class="col-md-4">
+            <img
+              src="foto/kepala ayam 1.jpg"
+              alt="Kepala Ayam"
+              class="img-fluid"
+            />
+            <h3>Kepala Ayam</h3>
+            <p>Kepala ayam lezat dengan bumbu spesial.</p>
+            <p><strong>Rp 3,000</strong></p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-product="Kepala Ayam"
+              data-price="3000"
+              >pesan sekarang</a
+            >
+          </div>
+          <div class="col-md-4">
+            <img
+              src="foto/sate usus.webp"
+              alt="Kepala Ayam"
+              class="img-fluid"
+            />
+            <h3>sate usus</h3>
+            <p>sate usus lezat dengan bumbu spesial.</p>
+            <p><strong>Rp 1,000</strong></p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-product="sate usus"
+              data-price="1000"
+              >pesan sekarang</a
+            >
+          </div>
+          <div class="col-md-4">
+            <img src="foto/sate ati.jpg" alt="Kepala Ayam" class="img-fluid" />
+            <h3>sate ati</h3>
+            <p>sate ati lezat dengan bumbu spesial.</p>
+            <p><strong>Rp 3,000</strong></p>
+            <a
+              href="#"
+              class="btn btn-primary"
+              data-product="sate ati"
+              data-price="3000"
+              >pesan sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section py-5">
+      <div class="container text-center">
+        <h2>Tentang Kami</h2>
+        <p>
+          LezatKuning adalah usaha kuliner yang fokus pada hidangan tradisional
+          Indonesia dengan kualitas terbaik dan cita rasa autentik.
+        </p>
+      </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section py-5">
+      <div class="container text-center">
+        <h2>Pesan Sekarang</h2>
+        <form id="orderForm">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Nama Anda"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="Nomor Telepon"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <select class="form-control" id="menuChoice" required>
+              <option value="">Pilih Menu</option>
+              <option value="Nasi Kuning">Nasi Kuning</option>
+              <option value="Ayam Goreng">Ayam Goreng</option>
+              <option value="Kepala Ayam">Kepala Ayam</option>
+              <option value="Kepala Ayam">sate usus</option>
+              <option value="Kepala Ayam">sate ati</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              id="notes"
+              placeholder="Catatan Khusus (opsional)"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+      <div class="container text-center">
+        <h2>Kontak Kami</h2>
+        <p>Alamat: cijeungjing</p>
+        <p>Telepon: 0838-9577-5553</p>
+        <p>Email: ilhamsupriyadi20@gmail.com</p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127951.74675296507!2d107.45997417551586!3d-6.848698590681358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e3565202823d%3A0x92977621fc5ec5c1!2sJl.%20H.%20Dasuki%20No.15%2C%20Kertamulya%2C%20Kec.%20Padalarang%2C%20Kabupaten%20Bandung%20Barat%2C%20Jawa%20Barat%2040553!5e0!3m2!1sid!2sid!4v1694392425040!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3 custom-footer">
+      <div class="container text-center">
+        <p>&copy; 2024 Dapur barokah. All Rights Reserved.</p>
+        <!-- <div class="social-links">
+                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div> -->
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

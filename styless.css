@@ -1,0 +1,213 @@
+/* Aturan umum untuk mencegah scroll horizontal */
+html, body {
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+/* Pengaturan font dan line-height untuk elemen body */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+
+/* Gaya khusus untuk navbar dengan latar belakang kuning dan margin bawah */
+.custom-navbar {
+  background-color: rgb(255, 255, 69); /* Warna latar belakang navbar */
+  margin-bottom: 500px; /* Menambahkan margin bawah */
+}
+
+/* Mengatur font-weight untuk brand dalam navbar */
+.navbar-brand {
+  font-weight: bold; /* Teks brand menjadi tebal */
+}
+
+/* Pengaturan untuk hero section */
+.hero-section {
+  background-image: url('foto/+62-838-9577-5553.png'); /* Gambar latar belakang untuk hero section */
+  background-size: cover; /* Mengatur gambar agar menutupi seluruh hero section */
+  background-position: center 0.1px; /* Menyesuaikan posisi gambar sedikit ke bawah */
+  background-repeat: no-repeat; /* Mencegah gambar diulang */
+  color: #fff; /* Warna teks menjadi putih */
+  height: 140vh; /* Tinggi hero section 140% dari viewport */
+  display: flex; /* Menggunakan flexbox untuk layouting */
+  align-items: center; /* Menyelaraskan konten secara vertikal ke tengah */
+  justify-content: center; /* Menyelaraskan konten secara horizontal ke tengah */
+  text-align: center; /* Teks di tengah */
+  padding: 20px; /* Padding di sekitar konten */
+}
+
+.hero-section .container a {
+  margin-bottom: 20px;
+}
+
+/* Pengaturan untuk menu section */
+.menu-section {
+  padding: 50px 15px; /* Padding atas/bawah 50px, kiri/kanan 15px */
+}
+
+/* Gaya untuk gambar dalam menu section */
+.menu-section img {
+  border-radius: 10px; /* Menambahkan radius ke gambar */
+  width: 350px; /* Lebar gambar */
+  height: 300px; /* Tinggi gambar */
+  object-fit: cover; /* Mengatur gambar agar pas di dalam kotak */
+  transition: 0.3s; /* Transisi saat gambar di-hover */
+}
+
+/* Efek zoom saat gambar di-hover */
+.menu-section img:hover {
+  transform: scale(1.2); /* Membesarkan gambar saat di-hover */
+}
+
+/* Gaya untuk kolom dalam menu section */
+.menu-section .col-md-4 {
+  margin-bottom: 20px; /* Menambahkan margin bawah */
+}
+
+/* Pengaturan untuk order section */
+.order-section {
+  background: #f8f9fa; /* Warna latar belakang abu-abu terang */
+  padding: 50px 15px; /* Padding atas/bawah 50px, kiri/kanan 15px */
+}
+
+/* Gaya untuk judul dalam order section */
+.order-section h2 {
+  margin-bottom: 30px; /* Menambahkan margin bawah pada judul */
+}
+
+/* Gaya untuk form dalam order section */
+.order-section form {
+  max-width: 500px; /* Lebar maksimum form */
+  margin: auto; /* Form di tengah */
+}
+
+/* Gaya untuk input dan textarea dalam form order section */
+.order-section .form-control {
+  margin-bottom: 15px; /* Menambahkan margin bawah pada input dan textarea */
+}
+
+/* Pengaturan untuk footer */
+.custom-footer{
+  background:rgb(248, 248, 34); /* Warna latar belakang gelap */
+  color: #000000; /* Warna teks putih */
+  padding: 20px 15px; /* Padding atas/bawah 20px, kiri/kanan 15px */
+  text-align: center; /* Teks di tengah */
+}
+
+/* Gaya untuk tautan sosial di footer */
+.footer .social-links a {
+  margin: 0 10px; /* Menambahkan margin kiri/kanan pada tautan sosial */
+  color: #fff; /* Warna teks putih */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+/* Efek hover pada tautan sosial di footer */
+.footer .social-links a:hover {
+  color: #ddd; /* Mengubah warna teks menjadi abu-abu muda saat di-hover */
+}
+
+/* Gaya responsif untuk layar dengan lebar maksimum 992px */
+@media (max-width: 992px) {
+  .hero-section {
+    height: 120vh; /* Kurangi tinggi sedikit untuk layar lebih kecil */
+    padding: 15px; /* Kurangi padding untuk menjaga proporsi */
+  }
+
+  .menu-section img {
+    width: 300px; /* Kurangi lebar gambar untuk layar sedang */
+    height: 250px; /* Kurangi tinggi gambar untuk layar sedang */
+  }
+}
+
+/* Gaya responsif untuk layar dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh; /* Kurangi tinggi lebih lanjut untuk layar sedang */
+    padding: 10px; /* Kurangi padding lebih lanjut */
+  }
+
+  .hero-section h1 {
+    font-size: 2rem; /* Kurangi ukuran font h1 */
+    margin-bottom: 0.5rem; /* Kurangi margin bawah h1 */
+  }
+
+  .hero-section p {
+    font-size: 1rem; /* Kurangi ukuran font paragraf */
+    margin-bottom: 1.5rem; /* Kurangi margin bawah paragraf */
+  }
+
+  .menu-section img {
+    width: 250px; /* Lebar gambar lebih kecil untuk layar sedang */
+    height: 200px; /* Tinggi gambar lebih kecil untuk layar sedang */
+  }
+
+  .order-section {
+    padding: 30px 10px; /* Kurangi padding pada order section */
+  }
+
+  .footer {
+    padding: 15px 10px; /* Kurangi padding pada footer */
+  }
+}
+
+/* Gaya responsif untuk layar dengan lebar maksimum 576px */
+@media (max-width: 576px) {
+  .hero-section {
+    height: 80vh; /* Tinggi lebih kecil untuk perangkat kecil */
+    padding: 5px; /* Kurangi padding lebih lanjut */
+    background-position: center 30px; /* Posisikan background sedikit lebih tinggi */
+  background-size: contain;
+  }
+
+  .hero-section .container a {
+    margin-top: 100px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.5rem; /* Ukuran font h1 lebih kecil */
+  }
+
+  .hero-section p {
+    font-size: 0.875rem; /* Ukuran font paragraf lebih kecil */
+  }
+
+  .menu-section img {
+    width: 200px; /* Lebar gambar lebih kecil untuk layar kecil */
+    height: 150px; /* Tinggi gambar lebih kecil untuk layar kecil */
+    margin-bottom: 10px; /* Tambahkan margin bawah pada gambar */
+  }
+
+  .order-section .form-control {
+    padding: 10px; /* Kurangi padding pada input dan textarea */
+  }
+
+  .footer .social-links a {
+    margin: 0 5px; /* Kurangi margin kiri/kanan pada tautan sosial */
+  }
+}
+
+/* Gaya responsif untuk layar dengan lebar maksimum 400px */
+@media (max-width: 400px) {
+  .hero-section {
+    height: 70vh; /* Kurangi tinggi untuk layar yang sangat kecil */
+    padding: 0; /* Hilangkan padding untuk memaksimalkan ruang */
+    background-position: top; /* Posisikan background di atas */
+  }
+
+  .hero-section h1 {
+    font-size: 1.25rem; /* Ukuran font h1 lebih kecil lagi */
+  }
+
+  .hero-section p {
+    font-size: 0.75rem; /* Ukuran font paragraf lebih kecil lagi */
+  }
+
+  .menu-section img {
+    width: 150px; /* Lebar gambar lebih kecil lagi untuk layar sangat kecil */
+    height: 100px; /* Tinggi gambar lebih kecil lagi untuk layar sangat kecil */
+  }
+}
